@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="45dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="#fff"
+                android:background="@drawable/shape_button"
+                android:text="开始抽水" />
+            <TextView
+                android:id="@+id/txtCountDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="#38AF20"
+                android:textSize="30dp"
+                android:text="00:00:00">
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#38AF20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:text="提醒模式：">
+        </TextView>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+        <RadioGroup
+            android:id="@+id/radioGroupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:checked="true"
+                android:tag="10"
+                android:text="10分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="15"
+                android:text="15分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="20"
+                android:text="20分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="25"
+                android:text="25分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="30"
+                android:text="30分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="35"
+                android:text="35分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="40"
+                android:text="40分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="45"
+                android:text="45分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="50"
+                android:text="50分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="55"
+                android:text="55分钟后提醒" />
+            <RadioButton
+                android:id="@+id/radioButton60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiobutton_selector"
+                android:textColor="@drawable/radiobutton_text_color"
+                android:button="@null"
+                android:tag="60"
+                android:text="1小时后提醒" />
+        </RadioGroup>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
